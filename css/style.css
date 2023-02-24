@@ -12,11 +12,14 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #ffffff;
-  min-height: 5000px;
 }
 
 .line {
@@ -200,10 +203,6 @@ body {
   line-height: 1.6;
 }
 
-.about .row .content .social-icon a {
-  color: #ffffff;
-}
-
 /* ============================== */
 /* <=====| Product Section|=====> */
 /* ============================== */
@@ -312,12 +311,60 @@ body {
 .contact .row form .btn {
   margin-top: 3rem;
   display: inline-block;
-  padding: 1rem 3rem;
+  padding: 1rem 5rem;
   font-size: 1.7rem;
   color: #ffffff;
   background-color: var(--primary);
   cursor: pointer;
   border-radius: 4px;
+  transition: 200ms linear;
+}
+
+.contact .row form .btn:hover {
+  background-color: #6124da;
+  transition: 200ms linear;
+}
+
+/* ===================== */
+/* <=====| Footer|=====> */
+/* ===================== */
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0 1rem;
+  margin-top: 3rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #ffffff;
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: var(--bg);
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: #ffffff;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: var(--bg);
+  font-weight: 700;
 }
 
 /* ============================ */
