@@ -98,7 +98,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("../img/header-bg-2.png");
+  background-image: url("../img/header-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -226,6 +226,27 @@ body {
   line-height: 1.6;
 }
 
+.product .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.product .row .product-card {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.product .row .product-card img {
+  border-radius: 1rem;
+  width: 80%;
+}
+
+.product .row .product-card .product-card-title {
+  margin: 1rem auto 0.5rem;
+}
+
 /* ============================ */
 /* <=====| Media Queries|=====> */
 /* ============================ */
@@ -294,6 +315,10 @@ body {
   .about .row .content h3 {
     margin-top: 1rem;
     font-size: 1.6rem;
+  }
+
+  .product p {
+    font-size: 1.2rem;
   }
 }
 
